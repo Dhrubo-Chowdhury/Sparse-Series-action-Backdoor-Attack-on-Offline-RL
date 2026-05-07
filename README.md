@@ -52,3 +52,31 @@ This reflects realistic Offline RL workflows where datasets are externally colle
 ---
 
 ## 📁 Repository Structure
+
+## 🚀 Quick Start
+
+### 1. Poison a Dataset
+
+```bash
+python scripts/poison_dataset.py \
+    --env hopper \
+    --attack sequence_action \
+    --poison_ratio 0.002 \
+    --trigger_length 3
+
+### 2. Train an offline RL agent
+python scripts/train.py \
+    --config configs/algo/cql.yaml \
+    --env hopper \
+    --dataset poisoned
+
+### 2. Evaluate backdoor behavior
+python scripts/evaluate.py \
+    --model checkpoints/cql_hopper.pt
+
+📊 Metrics
+Clean Return
+Triggered Return
+D4RL Score
+Trigger Success Rate (TSR)
+
