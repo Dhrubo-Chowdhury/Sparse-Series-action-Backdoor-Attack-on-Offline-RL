@@ -52,6 +52,21 @@ This reflects realistic Offline RL workflows where datasets are externally colle
 ---
 
 ## 📁 Repository Structure
+```bash
+series-action-backdoor-rl/
+├── configs/
+├── src/
+│ ├── algorithms/
+│ ├── attacks/
+│ ├── datasets/
+│ ├── models/
+│ ├── training/
+│ └── evaluation/
+├── scripts/
+├── results/
+├── notebooks/
+└── tests/
+```
 
 ## 🚀 Quick Start
 
