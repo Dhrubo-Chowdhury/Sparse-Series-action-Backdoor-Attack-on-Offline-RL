@@ -66,14 +66,18 @@ python scripts/poison_dataset.py \
 ```
 
 ### 2. Train an offline RL agent
+```bash
 python scripts/train.py \
     --config configs/algo/cql.yaml \
     --env hopper \
     --dataset poisoned
+```
 
 ### 2. Evaluate backdoor behavior
+```bash
 python scripts/evaluate.py \
     --model checkpoints/cql_hopper.pt
+```
 
 📊 Metrics
 Clean Return
