@@ -63,6 +63,7 @@ python scripts/poison_dataset.py \
     --attack sequence_action \
     --poison_ratio 0.002 \
     --trigger_length 3
+```
 
 ### 2. Train an offline RL agent
 python scripts/train.py \
