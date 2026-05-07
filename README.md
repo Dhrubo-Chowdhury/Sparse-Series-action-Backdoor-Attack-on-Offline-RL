@@ -94,8 +94,8 @@ python scripts/evaluate.py \
 ```
 
 📊 Metrics
-Clean Return
-Triggered Return
-D4RL Score
-Trigger Success Rate (TSR)
+-Clean Return
+-Triggered Return
+-D4RL Score
+-Trigger Success Rate (TSR)
 
